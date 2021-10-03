@@ -9,4 +9,7 @@ def seperate_ontology(string):
     ontologys = []
     for match in matches:
         ontologys.append(match[-1])
-    return str(ontologys)
+    return ontologys
+
+def classification_label(mapping, classifications):
+    return [mapping[clf] for clf in classifications]
