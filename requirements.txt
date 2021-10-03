@@ -1,0 +1,14 @@
+jupyterlab
+pandas==1.1.5
+tensorflow==2.4.1
+python-dotenv==0.15.0
+openpyxl
+lxml
+BeautifulSoup4
+regex
+nltk
+gensim
+scikit-learn
+matplotlib
+transformers 
+spacy
