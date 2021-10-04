@@ -19,35 +19,36 @@ Armed with a good sense for the nature of RegInsight's data content, we can begi
 
 Unfortunately, due to the limited time frame that is available for this introductory study, the analytics of this data is quite limited. In this study, the corpus of documents gathered is vectorised using the `Word2Vec` algorithm to learn the linguistic relations present within these regulations.
 
-`Word2Vec` uses.....................
-
-Through these word embeddings, it is possible to find both highly correlated and highly anti-correlated words, as well as the euclidean distance between different word vectors. This information can provide us key insights into the thinking of regulatory bodies.
+`Word2Vec` uses a neural network to embed a corpus of documents into word vectors. From this, it is possible to find both highly correlated and highly anti-correlated words, as well as the euclidean distance between different word vectors. This information can provide us key insights into the thinking of regulatory bodies.
 
 ## Findings
 
 Through doing this, I have learnt some interesting relations such as
 
-* asdfglknfg
-* a;lfdgkmandf;lgk
+* the word 'money' being frequently used in the context of 'misappropriation'
+* the word 'money' having a higher simalarity score to the word 'deposit' (0.241) than 'withdrawal' (0.094)
 
-As each regulatory body will approach regulation from their own direction, it is perhaps a more intelligent to assess the word vectors for each separate entity, instead of aggregating these over the entire data set.
+These insights tell us that regulators concern themselves more highly with regulation over the depositing of funds, than the withdrawal of funds, and that the misappropriation of funds is of a key concern to regulaotors, with this being of a higher importance than words such as 'finance' or 'professionals'.
 
-By decomposing the data in this way, we find that
+As each jurisdiction will approach regulation from their own direction, it is perhaps a more intelligent to assess specific to a certain geography, instead of aggregating these over the entire data set. For instance, by considering only the jurisdiction's within North America (these being the United States of America, Canada and the US State of New York).
 
-* ;aksdfjn#
-* a;kdfgjna
+By decomposing the data in this way, we find that in North America;
+
+* 'missapropriation' is less strongly related to 'money', being beaten by concepts such as 'payments' and 'hedge'
+* the similarity of 'money' to deposit is (0.185) and to 'withdrawal' is (0.105)
+
+This information can tell us that missapropriation is currently considered a higher priority globally than it is in North America, which is perhaps a reflection on the regions strong existing anti-corruption frameworks. And additionally that the withdrawal of funds is of greater significance in NA, which perhaps demonstrates the strong consumer protections in the region.
 
 ## Future plans
 
 Given more time, it would be exciting to discover what insights could be gained from applying machine learning techniques to this data. One way of doing so would be to label the available data into different semantic classifications, and then fit this data using a machine learning model, allowing us to make classifications on future inputs. This approach is obviously unfeasible within the time frame of this study.
 
-Alternatively, one could use the Ontological classifications provided by RegOntology to learn which regulator is most likely to be assigned each of the 273 unique Ontological classifications available in the data set. Other interesting features that could be used along side the RegInsite classifications would be a simple BOW analysis of the text within each category. This study may help the end users understand the focus of each regulating body, and help them track their shifting priorities over time. Similarly the same analysis could be performed to learn the changing focus within different geographical regions. For this reason, it would be important to re-use, re-train and re-optimise any such machine learning models to provide these insights over a range of different sub-categories, and to continuously keep updating these models via RegInsights near real-time classifications.
-
+Alternatively, one could use the Ontological classifications provided by RegOntology to learn which regulator is most likely to be make which Ontological classifications and which groups of classifications, out of the  273 unique labels available in the data set. Other interesting features that could be used along side the RegInsite classifications would be a simple BOW analysis of the text within each category. This study may help the end users understand the focus of each regulating body, and help them track their shifting priorities over time. Similarly the same analysis could be performed to learn the changing focus within different geographical regions. For this reason, it would be important to re-use, re-train and re-optimise any such machine learning models to provide these insights over a range of different sub-categories, and to continuously keep updating these models via RegInsights near real-time classifications.
 
 # HOW TO RUN
 
 ```
 python -m venv .venv
-.venv/Scripts/Activate.ps1
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
