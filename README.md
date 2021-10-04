@@ -26,18 +26,18 @@ Unfortunately, due to the limited time frame that is available for this introduc
 Through doing this, I have learnt some interesting relations such as
 
 * the word 'money' being frequently used in the context of 'misappropriation'
-* the word 'money' having a higher simalarity score to the word 'deposit' (0.241) than 'withdrawal' (0.094)
+* the word 'money' having a higher similarity score to the word 'deposit' (0.241) than 'withdrawal' (0.094)
 
-These insights tell us that regulators concern themselves more highly with regulation over the depositing of funds, than the withdrawal of funds, and that the misappropriation of funds is of a key concern to regulaotors, with this being of a higher importance than words such as 'finance' or 'professionals'.
+These insights tell us that regulators concern themselves more highly with regulation over the depositing of funds, than the withdrawal of funds, and that the misappropriation of funds is of a key concern to regulators, with this being of a higher importance than words such as 'finance' or 'professionals'.
 
 As each jurisdiction will approach regulation from their own direction, it is perhaps a more intelligent to assess specific to a certain geography, instead of aggregating these over the entire data set. For instance, by considering only the jurisdiction's within North America (these being the United States of America, Canada and the US State of New York).
 
 By decomposing the data in this way, we find that in North America;
 
-* 'missapropriation' is less strongly related to 'money', being beaten by concepts such as 'payments' and 'hedge'
+* 'misappropriation' is less strongly related to 'money', being beaten by concepts such as 'payments' and 'hedge'
 * the similarity of 'money' to deposit is (0.185) and to 'withdrawal' is (0.105)
 
-This information can tell us that missapropriation is currently considered a higher priority globally than it is in North America, which is perhaps a reflection on the regions strong existing anti-corruption frameworks. And additionally that the withdrawal of funds is of greater significance in NA, which perhaps demonstrates the strong consumer protections in the region.
+This information can tell us that misappropriation is currently considered a higher priority globally than it is in North America, which is perhaps a reflection on the regions strong existing anti-corruption frameworks. And additionally that the withdrawal of funds is of greater significance in NA, which perhaps demonstrates the strong consumer protections in the region.
 
 ## Future plans
 
